@@ -1,6 +1,8 @@
 export function calculateTotalSalary(lineup) {
-  return 0
-}
+  lineup.reduce((total, player) => {
+      return total + player.salary
+       }, 0)
+   }
 
 export function getPositionCounts(lineup) {
   return {}
